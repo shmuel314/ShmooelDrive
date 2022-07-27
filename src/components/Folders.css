@@ -1,0 +1,26 @@
+.folder-super-conrainer{
+  border: 1px solid;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.folders-container{
+  display: flex ;
+  justify-content: space-between;
+}
+
+.folder{
+    border: 1px solid;
+    width: 100px;
+    /* background-color: aqua; */
+  }
+
+.path-container{
+  display: flex;
+}
+
+.add-folder{
+  border: 1px solid;
+  width: 70px;
+}

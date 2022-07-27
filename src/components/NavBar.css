@@ -1,0 +1,7 @@
+
+.navbar-contaimer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(26, 157, 201);
+    height: 45px;
+}

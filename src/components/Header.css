@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+.header-container{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    height: 90px;
+    background-color: black;
+}
+
+.header-inner-width{
+    display: flex;
+    width: 95%;
+    align-items: center;
+    /* background-color: rgb(2, 3, 3); */
+}
+
+.header-inner-width p{
+    color: aqua;
+    font-size: xx-large;
+    font-family: "muli",sans-serif;
+}

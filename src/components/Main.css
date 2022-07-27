@@ -1,0 +1,39 @@
+.main-container{
+    display: flex;
+    justify-content: center;
+   height: 100%;
+    border: 1px solid red;
+}
+
+.main-inner-width{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border: 1px solid yellow;
+}
+
+.main-folders-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;;
+    border: 3px solid chartreuse;
+    width: 60%;
+}
+
+.folder{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    width: 200px;
+    height: 8%;
+    border: 1px solid;
+}
+.folder p{
+    border: 1px solid;
+}
+.folder input{
+    width: 60%;
+}
