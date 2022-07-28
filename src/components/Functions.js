@@ -7,11 +7,8 @@ function getFolders(folderName,setState) {//read folder
   axios.get(`http://localhost:5500/root/folders/?folderName=${folderName}`)
   .then((res)=>{
     setState(res.data)
-    // console.log(res.data);
-    // return res.data
+    console.log(res.data);
   })
-//   .catch(error)
-//   console.log(error,"error of getFolders function");
 }
 
 function addFolders(path,newFolder){
@@ -37,11 +34,18 @@ function renameFolder(currentName,newName){
   })
 }
 
-function addFiles(formData){
-  axios.post('http://localhost:5500/root/files/',{path:formData.name,content:formData.file})
+function addFiles(path,formData){
+  axios.post(`http://localhost:5500/root/files/?path=${path}`,formData)
   .then((res)=>{
     console.log(res.data);
   })
   .catch((err)=>console.log(err))
 }
-export default {getFolders,addFolders,delFolders,renameFolder,addFiles}
+
+function delFile(path){
+  axios.delete(`http://localhost:5500/root/files/?path=${path}`)
+  .then((res)=>{
+    console.log(res.data);
+  })
+}
+export default {getFolders,addFolders,delFolders,renameFolder,addFiles,delFile}
